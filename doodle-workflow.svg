@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" fill="none" aria-hidden="true">
+  <g stroke="#161616" stroke-linecap="round" stroke-linejoin="round">
+    <!-- His initials, drawn quickly as a personal mark. -->
+    <path d="m57 137 16 44 21-41m17 13c-14-8-26 5-21 22 4 15 18 9 25-2m-1-40 3 52m9-35 15 34 18-39" stroke-width="6"/>
+    <path d="m53 129 18 54m31-35c-9 7-13 19-9 27m22-43 2 48m11-30 12 27" stroke-width="2.2"/>
+    <path d="m68 111-3-10m29 15 6-14m47 19 13-8m-51 80 3 13" stroke-width="3.5"/>
+
+    <!-- Three imperfect sheets: a brief becoming a repeatable system. -->
+    <path d="m200 84 117-10 9 130-117 9z" stroke-width="5.5"/>
+    <path d="m220 105 119-6 4 126-119 8" stroke-width="3.5"/>
+    <path d="m239 122 113-4 3 124-111 5z" stroke-width="5"/>
+    <path d="m255 149 54-2m-53 17 79-3m-78 19 49-2m-48 19 65-2" stroke-width="3"/>
+    <path d="m250 259 115-6" stroke-width="2" stroke-dasharray="8 13"/>
+
+    <!-- The output returns as learning, rather than ending at delivery. -->
+    <path d="M367 145c28-9 47-4 59 15 15 25 7 51-14 62" stroke-width="5.5"/>
+    <path d="m414 213-5 20 19-5" stroke-width="5.5"/>
+    <path d="M399 255c-29 34-92 42-143 34-52-9-76-26-91-49" stroke-width="4.5"/>
+    <path d="m165 240 3 19 17-10" stroke-width="4.5"/>
+    <path d="M147 166c18-3 33-6 52-4m-12-10 13 10-12 9" stroke-width="5"/>
+    <path d="m381 93 15 13m-4-29 5 20m19-4 13-10" stroke-width="3"/>
+  </g>
+  <g stroke="#73f8e0" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m65 145 9 26m37-11 2 16" stroke-width="5"/>
+    <path d="m262 147 43-2m-47 52 37-2" stroke-width="5"/>
+    <path d="M357 165c13-12 33-15 49-8" stroke-width="6"/>
+    <path d="M353 278c-28 8-62 9-83 5" stroke-width="5"/>
+  </g>
+  <g fill="#161616">
+    <circle cx="194" cy="103" r="3"/><circle cx="374" cy="84" r="3.5"/><circle cx="448" cy="183" r="3"/>
+    <circle cx="123" cy="229" r="2.5"/><circle cx="228" cy="280" r="2.5"/>
+  </g>
+</svg>
