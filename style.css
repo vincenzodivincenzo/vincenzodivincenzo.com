@@ -57,3 +57,16 @@ header{height:82px;position:sticky;top:0;z-index:10;background:var(--paper);gap:
 @media(max-width:760px){.personal-top{min-height:44px}.personal-doodle{width:50px;height:40px;margin-top:-5px}}
 @media(prefers-reduced-motion:reduce){.personal-doodle{transition:none}}
 @media print{.personal-doodle{display:none}.personal-top{min-height:0;margin-bottom:6px}}
+
+/* Earlier experience: a restrained resume timeline. */
+.experience{padding-top:76px}
+.experience-list{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.experience-row{display:grid;grid-template-columns:110px minmax(0,1fr) 170px;gap:24px;align-items:start;padding:25px 0;border-bottom:1px solid var(--line)}
+.experience-row:last-child{border-bottom:0}
+.experience-date,.experience-role{font-family:'Courier New',monospace;font-size:12px;line-height:1.5;color:var(--muted)}
+.experience-row h3{font-size:24px;font-weight:500;letter-spacing:-.045em;line-height:1.1;margin:0 0 7px}
+.experience-row p{font-size:15px;line-height:1.48;color:var(--muted);max-width:580px;margin:0}
+.experience-role{text-align:right}
+.experience+.notes{margin-top:86px}
+@media(max-width:760px){.experience{padding-top:53px}.experience-row{grid-template-columns:75px minmax(0,1fr);gap:12px;padding:20px 0}.experience-row h3{font-size:21px}.experience-row p{font-size:14px}.experience-role{grid-column:2;text-align:left;margin-top:-5px}.experience+.notes{margin-top:58px}}
+@media print{.experience{padding-top:26px}.experience-row{padding:10px 0;grid-template-columns:90px minmax(0,1fr) 125px;gap:12px;break-inside:avoid}.experience-row h3{font-size:17px}.experience-row p{font-size:11px}.experience-date,.experience-role{font-size:10px}.experience+.notes{margin-top:26px}}
