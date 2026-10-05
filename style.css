@@ -46,3 +46,14 @@ header{height:82px;position:sticky;top:0;z-index:10;background:var(--paper);gap:
 @media(max-width:380px){.site-nav{gap:9px}.site-nav a{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.contact-grid a{transition:none}}
 @media print{header{position:static}.site-nav{display:none}.intro{border-bottom:0}.work,.personal-projects{padding-top:26px}.section-title h2,.notes h2{font-size:26px}.notes{margin-top:26px;padding:30px 0}.contact{padding:28px 0}.contact-grid a{min-height:0;padding:8px 0}}
+
+/* Small hand-drawn marks tied to each personal project. */
+.personal-top{display:flex;justify-content:space-between;align-items:flex-start;width:100%;min-height:51px;margin-bottom:5px}
+.personal-top .personal-number{margin-bottom:0}
+.personal-doodle{width:58px;height:46px;flex:none;margin-top:-8px;transform:rotate(-5deg);transition:transform .2s ease;overflow:visible}
+.personal-doodle path{fill:none;stroke:var(--ink);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.personal-doodle .accent-stroke{stroke:var(--accent-ink);stroke-width:3.5}
+.personal-card:hover .personal-doodle{transform:rotate(3deg) translateY(-3px)}
+@media(max-width:760px){.personal-top{min-height:44px}.personal-doodle{width:50px;height:40px;margin-top:-5px}}
+@media(prefers-reduced-motion:reduce){.personal-doodle{transition:none}}
+@media print{.personal-doodle{display:none}.personal-top{min-height:0;margin-bottom:6px}}
