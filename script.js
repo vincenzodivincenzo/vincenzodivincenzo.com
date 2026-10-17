@@ -34,3 +34,23 @@ const sectionObserver = new IntersectionObserver(entries => entries.forEach(entr
   track('section_view', { section: entry.target.id });
 }), { threshold: [0, 0.25, 0.5, 0.75, 1] });
 document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
+
+const consentBanner = document.querySelector('.consent');
+const storedConsent = () => { try { return localStorage.getItem('analytics-consent'); } catch (e) { return null; } };
+const clearAnalyticsCookies = () => document.cookie.split('; ').map(c => c.split('=')[0]).filter(name => name.startsWith('_ga')).forEach(name => {
+  [location.hostname, '.' + location.hostname.replace(/^www\./, '')].forEach(domain => { document.cookie = `${name}=; Max-Age=0; path=/; domain=${domain}`; });
+  document.cookie = `${name}=; Max-Age=0; path=/`;
+});
+consentBanner.hidden = storedConsent() !== null;
+consentBanner.addEventListener('click', event => {
+  const choice = event.target.closest('[data-consent]')?.dataset.consent;
+  if (!choice) return;
+  try { localStorage.setItem('analytics-consent', choice); } catch (e) {}
+  window.gtag?.('consent', 'update', { analytics_storage: choice });
+  if (choice === 'denied') clearAnalyticsCookies();
+  consentBanner.hidden = true;
+});
+document.querySelector('.consent-open').addEventListener('click', () => {
+  consentBanner.hidden = false;
+  consentBanner.querySelector('button').focus();
+});
